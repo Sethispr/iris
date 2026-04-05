@@ -1,0 +1,9 @@
+{
+  "extension": ["ts"],
+  "spec": "src/**/*.test.ts",
+  "recursive": true,
+  "timeout": 5000,
+  "ui": "bdd",
+  "reporter": "spec",
+  "exit": true
+}
