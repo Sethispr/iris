@@ -37,6 +37,10 @@ export default tseslint.config(
       'vue/multi-word-component-names': 'off',
       'vue/component-name-in-template-casing': ['error', 'PascalCase'],
       'vue/attribute-hyphenation': ['error', 'always'],
+      'vue/no-unused-properties': ['error', { groups: ['props'] }],
+      'vue/no-unused-refs': 'error',
+      'vue/no-unused-emit-declarations': 'error',
+      'vue/no-unused-vars': 'error',
       'vue/html-self-closing': [
         'error',
         {
@@ -50,7 +54,7 @@ export default tseslint.config(
         },
       ],
       '@typescript-eslint/no-unused-vars': [
-        'warn',
+        'error',
         { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
       ],
       '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
