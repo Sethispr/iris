@@ -1,0 +1,51 @@
+{
+  "name": "iris",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port=3000 --host=0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx --fix",
+    "format": "prettier --write \"src/**/*.{vue,ts,js,css}\"",
+    "type-check": "vue-tsc --noEmit",
+    "test": "mocha --node-option loader=tsx",
+    "coverage": "c8 --check-coverage --lines 100 --functions 100 --branches 100 --statements 100 npm run test",
+    "analyze": "vite build",
+    "knip": "knip"
+  },
+  "dependencies": {
+    "@fontsource/jetbrains-mono": "^5.2.8",
+    "@fontsource/outfit": "^5.2.8",
+    "@phosphor-icons/vue": "^2.2.1",
+    "canvas-confetti": "^1.9.4",
+    "daisyui": "^5.5.19",
+    "fflate": "^0.8.2",
+    "idb-keyval": "^6.2.2",
+    "vue": "^3.5.32"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.2.2",
+    "@types/canvas-confetti": "^1.9.0",
+    "@types/chai": "^5.2.3",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^25.5.2",
+    "@vitejs/plugin-vue": "^6.0.5",
+    "c8": "^11.0.0",
+    "chai": "^6.2.2",
+    "eslint": "^10.2.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-vue": "^10.8.0",
+    "knip": "^6.3.0",
+    "mocha": "^11.7.5",
+    "prettier": "^3.8.1",
+    "tailwindcss": "^4.2.2",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2",
+    "typescript-eslint": "^8.58.0",
+    "vite": "^8.0.5",
+    "vue-eslint-parser": "^10.4.0",
+    "vue-tsc": "^3.2.6"
+  }
+}
